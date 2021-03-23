@@ -1,0 +1,106 @@
+---
+title: OSCA overview
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = FALSE, message=FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(DiagrammeR)
+library(googlesheets4)
+```
+
+
+```{r}
+add_graph_legend <- function(graph, x, y) {
+  graph %>%
+    add_node(
+      label = c("", "Color:", "mandatory", "alternative", "extra", "Shape:", "non-interactive", "interactive"),
+      node_data =
+        node_aes(x = c(x+2.4, x-0.23, x, x+1, x+2, x+3.5-0.3, x+3.5, x+4.75),
+                 y = c(y-0.34, y, rep(y-0.4, 3), y, rep(y-0.4, 2)),
+                 fontcolor = c("white", "black", rep("white", 3), "black", "white", "white"),
+                 fontsize = 9,
+                 shape = c("rect", "none", rep("rect", 3), "none", "rect", "egg"),
+                 fillcolor = c(NA, "none", "DarkSeaGreen4", "DarkOrange4", "PeachPuff3", "none", rep("Grey40", 2)),
+                 width = c(6, rep(0.8, 4), rep(1,3)),
+                 height = c(1, 0, NA, NA, NA, 0, NA, NA),
+                 penwidth = c(0.5, 0, 2, 2, 2, 0, 2, 2),
+                 tooltip = c("", "",
+                             "Mandatory syllabus.",
+                             "Alternative syllabus if you prefer another learning style.",
+                             "Extra learning if you are interested (not part of syllabus).",
+                             "",
+                             "Non-interactive learning content (e.g. reading).",
+                             "Interactive learning content (tutorial, exercises etc.).")
+        ))
+}
+
+create_diagram <- function(url, nodes, edges, x_legend = 0, y_legend = 0, fontsize = 12) {
+  # gs4_deauth()
+  nodes <- read_sheet(url, sheet = nodes, col_types = "iciicccdd")
+  edges <- read_sheet(url, sheet = edges, col_types = "iiic")
+  edges <-
+    create_edge_df(
+      from = edges$from,
+      to =   edges$to,
+      tooltip = edges$tooltip)
+  graph <-
+    create_graph(nodes_df = nodes, edges_df = edges) %>%
+    mutate_node_attrs(
+      x = semester * 6,
+      style = "filled",
+      fixedsize = FALSE,
+      fontsize = fontsize,
+      fontcolor = "white",
+      penwidth = 2,
+      margin = case_when(
+        type == "Infobox" ~ 0.1,
+        TRUE ~ 0.3),
+      fontname = "Helvetica-bold",
+      shape = case_when(
+        type == "Mandatory" ~ "rect",
+        type == "Elective" ~ "rect",
+        type == "Infobox" ~ "egg",
+        TRUE ~ "oval"),
+      emo = case_when(
+        type == "reading" ~ "📖 ",
+        type == "recap" ~ "📖 ",
+        type == "tutorial" ~ "💡 ",
+        type == "exercises" ~ "💻 ",
+        type == "video" ~ "🎬 ",
+        TRUE ~ ""),
+      label = str_c(emo, "", label),
+      fillcolor = case_when(
+        type == "Mandatory" ~ "DarkOrange4",
+        type == "Elective" ~ "DarkSeaGreen4",
+        type == "Infobox" ~ "PeachPuff3",
+        TRUE ~ "#F4A261")
+    ) %>%
+    mutate_edge_attrs(
+      color = "black",
+      alpha = 0.15,
+      penwidth = 3,
+      arrowsize = 2,
+      arrowhead = "vee") %>%
+    add_graph_legend(x_legend, y_legend)
+  return(graph)
+}
+```
+
+```{r, include=TRUE, out.width="100%", fig.asp=NA}
+g <- create_diagram(
+  url = "https://docs.google.com/spreadsheets/d/1TzNty62Ae5pNiwwB2CBgnAgeFyuODGK1gxc794GPoSg/edit?usp=sharing",
+  nodes = "nodes",
+  edges = "edges",
+  fontsize = 20)
+# g %>% get_edge_df()
+render_graph(g)
+```
+
+
