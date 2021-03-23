@@ -12,6 +12,7 @@ name: Compile html docs
 
 jobs:
   build:
+    - name: Render Rmd files
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
