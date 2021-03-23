@@ -40,7 +40,7 @@ jobs:
       
       - name: Build html files
         run: |
-          gs4_deauth()
+          googlesheets4::gs4_deauth()
           rmarkdown::render("osca_diagramme.Rmd", output_file="diagramme.html", output_dir = "./docs/")
           rmarkdown::render("om.Rmd", output_file="om.html", output_dir = "./docs/")
           rmarkdown::render("osca.Rmd", output_file="osca.html", output_dir = "./docs/")
