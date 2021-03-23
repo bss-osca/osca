@@ -1,2 +1,1 @@
-# osca
-General stuff or the OSCA study programme 
+# General stuff for the OSCA study programme 
