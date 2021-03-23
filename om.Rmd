@@ -9,36 +9,67 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-If you like Operations Management then you may have a look at the following electives in the 5'th semester:
+If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
 Electives
 
   * Modellering indenfor præskriptiv analyse (10 ECTS, taught in Danish): Lidt tekst og et link.
   * Warehousing (taught in Danish): 
-  * Decision Analysis (taught in Danish): 
-  * Supply Chain Management and Sustainability (taught in Danish): 
+  * Decision Analysis (taught in English): 
+  * Supply Chain Management and Sustainability (taught in English): 
   * Dynamisk Performance og Data-dreven Modellering (taught in Danish): 
 
-Moreover, in the 6'th semester you may write your bachelor report within topics such as ...[kig på udbudsemner]. Finally, the Operations and Supply Chain Analytics (OSCA) master study programme provides you with advance knowledge within areas such as  
+Moreover, in the 6'th semester you may write your bachelor report within topics such as ...[kig på udbudsemner]. Finally, the [Operations and Supply Chain Analytics (OSCA)](#OSCA) master study programme provides you with advance knowledge within areas such as  
 
 Note that you don't have to take any of the electives for joining the OSCA programme.
 
-Operations and Supply Chain Management (OSCM) includes a broad area that covers both manufacturing and service industries, involving the functions of
-sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting,
+
+## List of electives related to Operations Management
+
+Here we will briefly introduce the five electives mentioned above
+
+### [Decision Analysis (5 ECTS)](https://kursuskatalog.au.dk/da/course/108477/Decision-Analysis)
+* Many business economics textbooks focus on well-described and well-structured problems that are easily solved using a model. However, it is often not described how to deal with uncertainty, several conflicting goals, and other complicating matters, which makes the decision-making process difficult. Thus, this course focuses on *exactly* those situations.
+* Among others, the course will treat subjects such as **multi-criteria decision making** (MCDM), **risk aversion**, and **decision processes in groups** .
+
+
+### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability)
+* This course focuses on the incorporation of the concept of *sustainability* in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
+* Among others, the course will treat subjects such as **sustainability in an organization's strategy**, **the relation between sustainability and supply chain management decisions**, and **the cooperation on sustainability issues with suppliers**.
+
+
+### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics)
+* This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
+* Among others, the course will treat subjects such as **location planning**, **production planning**, and **vehicle routing** but also **validation** and **verification** of models and solutions. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u_FUX6B5GPY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+### [Dynamisk performance og data-dreven modellering (10 ECTS)](https://kursuskatalog.au.dk/da/course/102350/Dynamisk-performance-og-data-dreven-modellering)
+* 
+*
+
+
+
+## The Operations and Supply Chain Analytics program {#OSCA}
+
+Operations and Supply Chain Management (OSCM) includes a broad area that covers both manufacturing and service industries, involving the functions of sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting,
 order fulfillment, and more.
 
 
 Analytics refers to the scientific process of transforming data into insights for making better decisions in businesses (Definition of INFORMS.org). 
 
-Operations and Supply Chain Analytics (Our Program) refers to apply the analytic tools to handle the O&SCM problems:
-Big data management:
-Storing, integrating, analyzing, updating, and using huge amounts of data in real time.
-Data driven decision making:
-Framing a decision problem and choosing the best option.
-Optimization of business process:
-Math methods to find the best solution to a particular type of problem to meet desired criteria. 
-Computer simulations for business process improvement:
-Show how systems perform under different conditions and allow users to test various ways to model a system or possible approaches to a problem.
-Many more
+**Operations and Supply Chain Analytics** (our program) refers to the application of analytic tools to handle O&SCM problems such as
+
+* Big data management:
+    * Storing, integrating, analyzing, updating, and using huge amounts of data in real time.
+* Data driven decision making:
+    * Framing a decision problem and choosing the best option.
+* Optimization of business process:
+    * Mathematical methods to find the best solution to a particular type of problem to meet desired criteria. 
+* Computer simulations for business process improvement:
+    * Show how systems perform under different conditions and allow users to test various ways to model a system or possible approaches to a problem.
+* And many more
 
 [Some pictures of jobs]
