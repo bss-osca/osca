@@ -7,6 +7,7 @@ rmarkdown::render("osca_diagramme.Rmd", output_file="diagramme.html", output_dir
 rmarkdown::render("om.Rmd", output_file="om.html", output_dir = "./docs/")
 rmarkdown::render("osca.Rmd", output_file="osca.html", output_dir = "./docs/")
 commit(repo, "Commit from main", all = T)
+system("git push")
 # now push
 #push(repo, credentials = cred_token(token = "osca"))
 # gitcreds::gitcreds_get()
