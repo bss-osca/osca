@@ -1,28 +1,44 @@
 ---
 title: "If you like Operations Management"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+If you like Operations Management then you may have a look at the following electives in the 5'th semester:
 
-This is an R Msaarkdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Electives
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+  * Modellering indenfor præskriptiv analyse (10 ECTS, taught in Danish): Lidt tekst og et link.
+  * Warehousing (taught in Danish): 
+  * Decision Analysis (taught in Danish): 
+  * Supply Chain Management and Sustainability (taught in Danish): 
+  * Dynamisk Performance og Data-dreven Modellering (taught in Danish): 
 
-```{r cars}
-summary(cars)
-```
+Moreover, in the 6'th semester you may write your bachelor report within topics such as ...[kig på udbudsemner]. Finally, the Operations and Supply Chain Analytics (OSCA) master study programme provides you with advance knowledge within areas such as  
 
-## Including Plots
+Note that you don't have to take any of the electives for joining the OSCA programme.
 
-You can also embed plots, for example:
+Operations and Supply Chain Management (OSCM) includes a broad area that covers both manufacturing and service industries, involving the functions of
+sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting,
+order fulfillment, and more.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Analytics refers to the scientific process of transforming data into insights for making better decisions in businesses (Definition of INFORMS.org). 
+
+Operations and Supply Chain Analytics (Our Program) refers to apply the analytic tools to handle the O&SCM problems:
+Big data management:
+Storing, integrating, analyzing, updating, and using huge amounts of data in real time.
+Data driven decision making:
+Framing a decision problem and choosing the best option.
+Optimization of business process:
+Math methods to find the best solution to a particular type of problem to meet desired criteria. 
+Computer simulations for business process improvement:
+Show how systems perform under different conditions and allow users to test various ways to model a system or possible approaches to a problem.
+Many more
+
+[Some pictures of jobs]
