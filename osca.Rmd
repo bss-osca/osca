@@ -1,5 +1,5 @@
 ---
-title: "More about the OSCA study programme"
+title: "Info about the OSCA study programme"
 output: html_document
 ---
 
@@ -7,22 +7,21 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## The *Operations and Supply Chain Analytics* program {#OSCA}
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+*Operations and Supply Chain Management* (OSCM) includes a broad area covering both manufacturing and service industries, and it involves functions such as sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting, order fulfillment, and more.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+*Analytics* refers to the scientific process of transforming data into insights for making better decisions in businesses (Definition of [INFORMS.org](https://www.informs.org/About-INFORMS/News-Room/O.R.-and-Analytics-in-the-News/Best-definition-of-analytics)). 
 
-## Including Plots
+**Operations and Supply Chain Analytics** (our program) refers to the application of the tools from analytics to handle O&SCM problems such as
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+* Big data management:
+    * Storing, integrating, analyzing, updating, and using huge amounts of data in real time.
+* Data driven decision making:
+    * The process of making decisions based on actual data rather than intuition or observation alone.
+* Optimization of business process:
+    * Mathematical methods to find a best solution to a particular type of problem with respect to a set of desired criteria. 
+* Computer simulations for business process improvement:
+    * Show how systems perform under different conditions and allow users to test various ways to model a system or possible approaches to a problem.
+* And many more
