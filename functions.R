@@ -180,3 +180,4 @@ html_to_text<-function(url){
   # Format text vector into one character string
   return(paste(text, collapse = " "))
 }
+

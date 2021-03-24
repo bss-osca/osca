@@ -12,22 +12,31 @@ knitr::opts_chunk$set(echo = TRUE, include = FALSE, warning = FALSE)
 ```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
 ```
 
-```{r, out.width="100%", include=TRUE, echo=FALSE}
+<br/>
+
+```{r, out.width="100%", include=TRUE, echo=FALSE, out.height="300px", fig.height=1}
 urls <- c("https://www.dtu.dk/english/education/msc/programmes/business-analytics",
+          "https://econ.au.dk/research/other-research-entities/coral/profile/",
+          "https://www.bakertilly.com/insights/data-analytics-journey-where-to-start",
+          "https://pubsonline.informs.org/do/10.1287/LYTX.2010.06.01/full/",
           "https://en.wikipedia.org/wiki/Business_analytics",
           "https://en.wikipedia.org/wiki/Transportation_management_system",
           "https://en.wikipedia.org/wiki/Inventory_control",
           "https://www.investopedia.com/terms/i/inventory-management.asp",
           "https://en.wikipedia.org/wiki/Operations_research",
+          "https://en.wikipedia.org/wiki/Supply_chain",
+          "https://en.wikipedia.org/wiki/Logistics",
           "https://en.wikipedia.org/wiki/Operations_management")
 lst <- create_wordcloud(
   urls, 
-  excludeWords = c("research", "archived", "stock", "wikipedia"), 
-  max.words = 100)
+  excludeWords = c("research", "archived", "stock", "wikipedia", "time", "using", "different", 
+                   "march", "article", "number", "can", "edit", "work", "â€“", "one"), 
+  max.words = 80)
 lst$wcloud
-# lst$freqTable
+# View(lst$freqTable %>% remove_rownames())
 ```
 
+<br/>
 
 If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
