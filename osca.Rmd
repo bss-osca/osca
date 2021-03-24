@@ -4,7 +4,17 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, include = FALSE, message = FALSE)
+```
+
+```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
+```
+
+```{r}
+library(tidyverse)
+library(DiagrammeR)
+library(googlesheets4)
+gs4_deauth()
 ```
 
 ## The *Operations and Supply Chain Analytics* program {#OSCA}
@@ -25,3 +35,25 @@ knitr::opts_chunk$set(echo = TRUE)
 * Computer simulations for business process improvement:
     * Show how systems perform under different conditions and allow users to test various ways to model a system or possible approaches to a problem.
 * And many more
+
+[link to official OSCA programme]
+
+Måske en video ala [denne](https://www.dtu.dk/english/education/msc/programmes/business-analytics) 
+eller på [denne](https://kandidat.au.dk/retailmanagement/)
+
+
+```{r, include=TRUE, out.width="100%", fig.asp=NA, echo=FALSE}
+g <- create_diagram(
+  url = "https://docs.google.com/spreadsheets/d/1TzNty62Ae5pNiwwB2CBgnAgeFyuODGK1gxc794GPoSg/edit?usp=sharing",
+  nodes = "nodes",
+  edges = "edges",
+  fontsize = 20)
+# g %>% get_edge_df()
+# g %>% get_node_df()
+render_graph(g)
+```
+
+
+
+
+
