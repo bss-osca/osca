@@ -13,11 +13,11 @@ If you like Operations Management you may be interested in the following electiv
 
 Electives
 
-  * Modellering indenfor præskriptiv analyse (10 ECTS, taught in Danish): Lidt tekst og et link.
-  * Warehousing (taught in Danish): 
-  * Decision Analysis (taught in English): 
-  * Supply Chain Management and Sustainability (taught in English): 
-  * Dynamisk Performance og Data-dreven Modellering (taught in Danish): 
+  * [Warehousing](#warehousing) (taught in Danish)
+  * [Decision Analysis](#decisionanalysis) (taught in English)
+  * [Supply Chain Management and Sustainability](#scmSustain) (taught in English)
+  * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
+  * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (taught in Danish)
 
 Moreover, in the 6'th semester you may write your bachelor report within topics such as ...[kig på udbudsemner]. Finally, the [Operations and Supply Chain Analytics (OSCA)](#OSCA) master study programme provides you with advance knowledge within areas such as  
 
@@ -28,17 +28,21 @@ Note that you don't have to take any of the electives for joining the OSCA progr
 
 Here we will briefly introduce the five electives mentioned above
 
-### [Decision Analysis (5 ECTS)](https://kursuskatalog.au.dk/da/course/108477/Decision-Analysis)
+### [Warehousing (5 ECTS)](https://kursuskatalog.au.dk/) {#warehousing}
+* The course will provide insights into different types of warehouse systems; from completely manual systems to fully automated ones. It will place the warehouse in the supply chain and will discuss concepts like terminal management and cross docking to ensure that students understand these concepts and can relate them to, and differentiate them from, warehouse management. 
+* Among others, the course will treat subjects such as **the role of the warehouse in the supply chain**, **measuring the performance in warehouses**, **warehouse design and layout**, and **the role of returns**.
+
+### [Decision Analysis (5 ECTS)](https://kursuskatalog.au.dk/da/course/108477/Decision-Analysis){#decisionanlysis}
 * Many business economics textbooks focus on well-described and well-structured problems that are easily solved using a model. However, it is often not described how to deal with uncertainty, several conflicting goals, and other complicating matters, which makes the decision-making process difficult. Thus, this course focuses on *exactly* those situations.
 * Among others, the course will treat subjects such as **multi-criteria decision making** (MCDM), **risk aversion**, and **decision processes in groups** .
 
 
-### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability)
+### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability){#scmSustain}
 * This course focuses on the incorporation of the concept of *sustainability* in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
 * Among others, the course will treat subjects such as **sustainability in an organization's strategy**, **the relation between sustainability and supply chain management decisions**, and **the cooperation on sustainability issues with suppliers**.
 
 
-### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics)
+### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics){#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
 * Among others, the course will treat subjects such as **location planning**, **production planning**, and **vehicle routing** but also **validation** and **verification** of models and solutions. 
 
@@ -46,7 +50,7 @@ Here we will briefly introduce the five electives mentioned above
 
 
 
-### [Dynamisk performance og data-dreven modellering (10 ECTS)](https://kursuskatalog.au.dk/da/course/102350/Dynamisk-performance-og-data-dreven-modellering)
+### [Dynamisk performance og data-dreven modellering (10 ECTS)](https://kursuskatalog.au.dk/da/course/102350/Dynamisk-performance-og-data-dreven-modellering) {#dynPerform}
 * 
 *
 
