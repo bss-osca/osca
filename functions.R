@@ -150,12 +150,13 @@ create_wordcloud <- function(x, type=c("url", "text", "file"),
       # rotateRatio = 0.9,
       color = colors,
       # shape = "rectangle"
+      hoverFunction = htmlwidgets::JS("function(e){return}"),
       size = 1
     )
   # )
   # wordcloud(d$word,d$freq, min.freq=min.freq, max.words=max.words,
-  #           random.order=FALSE, rot.per=0.35, 
-  #           use.r.layout=FALSE, colors=colors)
+  #           random.order=FALSE, rot.per=0.35,
+  #           use.r.layout=FALSE, colors = "Dark2")
   
   invisible(
     list(tdm=tdm, 
