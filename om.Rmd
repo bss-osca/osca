@@ -6,8 +6,28 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, include = FALSE, warning = FALSE)
 ```
+
+```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
+```
+
+```{r, out.width="100%", include=TRUE, echo=FALSE}
+urls <- c("https://www.dtu.dk/english/education/msc/programmes/business-analytics",
+          "https://en.wikipedia.org/wiki/Business_analytics",
+          "https://en.wikipedia.org/wiki/Transportation_management_system",
+          "https://en.wikipedia.org/wiki/Inventory_control",
+          "https://www.investopedia.com/terms/i/inventory-management.asp",
+          "https://en.wikipedia.org/wiki/Operations_research",
+          "https://en.wikipedia.org/wiki/Operations_management")
+lst <- create_wordcloud(
+  urls, 
+  excludeWords = c("research", "archived", "stock", "wikipedia"), 
+  max.words = 100)
+lst$wcloud
+# lst$freqTable
+```
+
 
 If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
@@ -19,33 +39,24 @@ Electives
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
   * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (taught in Danish)
 
-Moreover, in the 6'th semester you may write your bachelor thesis within topics such as 
+Moreover, in the 6'th semester you may write your bachelor thesis within topics such as production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
 
-* Production planning
-* Distribution and transportation planning
-* Forecasting
-* Scheduling 
-* Logistics
-* Balanced scorecard
-* ... and many more 
-
-Have a look in the Operations and SCM section if you open the [the supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/).
-
-Finally, the [Operations and Supply Chain Analytics (OSCA)](#OSCA) master study programme provides you with advance knowledge within areas such as
-
-* Supply chain design and management
-* Data handling using VBA and R
-* Optimization and heuristics
-* Simulation and business process modeling
-* Transportation and distribution
-* Inventory, production and demand management
-* ... and many more
-
-Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
+Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study programme provides you with advance knowledge within areas such as supply chain design and management, data management using VBA and R, optimization and heuristics, simulation and business process modeling, transportation and distribution, inventory, production and demand management, and many more. Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
 
 
+### Applications of operations management
 
-## List of bachelor electives related to Operations Management
+Operations management has been successfull in many aspects
+
+* https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Real-Time-Analytics-Improve-Airport-Operations
+
+[A little list with jobs and success stories]
+
+
+[Some pictures of jobs]
+
+
+### List of bachelor electives related to Operations Management
 
 Here we will briefly introduce the five electives mentioned above
 
@@ -75,10 +86,5 @@ Here we will briefly introduce the five electives mentioned above
 * Among others, the course will treat subjects such as **quantitative performance models**, **dynamic performance and data-driven modelling**, **Monte Carlo simulation**, and **time-drive activity-based costing** in the **balanced score card** model.
 
 
-## Applications of operations management
 
-[A litte list with jobs and succes stories]
-
-
-[Some pictures of jobs]
 
