@@ -20,15 +20,23 @@ gs4_deauth()
 ```
 
 
-```{r, include=TRUE, out.width="100%", fig.asp=NA}
+```{r, include=TRUE, out.width="100%", fig.asp=NA, fig.cap="Study programme overview. Hover over the nodes and arcs to see more information. Click the nodes to see the official course description. Brown and green courses are mandatory and electives, respectively. In the 4'th semester you write your master thesis within a OSCA topic using what you have learnt in the courses."}
 g <- create_diagram(
   url = "https://docs.google.com/spreadsheets/d/1TzNty62Ae5pNiwwB2CBgnAgeFyuODGK1gxc794GPoSg/edit?usp=sharing",
   nodes = "nodes",
   edges = "edges",
-  fontsize = 20)
+  edge_width = 5,
+  fontsize = 17,
+  col_mandatory = "DarkOrange4",
+  col_elective = "DarkSeaGreen4",
+  col_infobox = "PeachPuff3"
+  )
 # g %>% get_edge_df()
-g %>% get_node_df()
-render_graph(g)
+# g %>% get_node_df()
+render_graph(g, 
+             as_svg = T, 
+             # width = 1200
+             )
 ```
 
 

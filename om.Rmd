@@ -55,7 +55,7 @@ Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master st
 
 ### Applications of operations management
 
-Operations management has been successfull in many aspects
+Operations management has been successful in many aspects
 
 * https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Real-Time-Analytics-Improve-Airport-Operations
 
