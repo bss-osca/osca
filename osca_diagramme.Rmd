@@ -27,7 +27,7 @@ g <- create_diagram(
   edges = "edges",
   edge_width = 5,
   fontsize = 17,
-  col_mandatory = "DarkOrange4",
+  col_mandatory = "Goldenrod3",
   col_elective = "DarkSeaGreen4",
   col_infobox = "PeachPuff3"
   )
