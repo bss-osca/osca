@@ -12,8 +12,13 @@ knitr::opts_chunk$set(echo = TRUE, include = FALSE, warning = FALSE)
 ```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
 ```
 
-```{r, out.width="100%", include=TRUE, echo=FALSE}
+<br/>
+
+```{r, out.width="100%", include=TRUE, echo=FALSE, out.height="300px", fig.height=1}
 urls <- c("https://www.dtu.dk/english/education/msc/programmes/business-analytics",
+          "https://econ.au.dk/research/other-research-entities/coral/profile/",
+          "https://www.bakertilly.com/insights/data-analytics-journey-where-to-start",
+          "https://pubsonline.informs.org/do/10.1287/LYTX.2010.06.01/full/",
           "https://en.wikipedia.org/wiki/Business_analytics",
           "https://en.wikipedia.org/wiki/Transportation_management_system",
           "https://en.wikipedia.org/wiki/Inventory_control",
@@ -29,9 +34,10 @@ lst <- create_wordcloud(
   excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs","article","articles"), 
   max.words = 100)
 lst$wcloud
-# lst$freqTable
+# View(lst$freqTable %>% remove_rownames())
 ```
 
+<br/>
 
 If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
@@ -50,7 +56,7 @@ Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master st
 
 ### Applications of operations management
 
-Operations management has been successfull in many aspects
+Operations management has been successful in many aspects
 
 * https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Real-Time-Analytics-Improve-Airport-Operations
 

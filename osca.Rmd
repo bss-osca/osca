@@ -1,6 +1,8 @@
 ---
 title: "Info about the OSCA study programme"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -42,18 +44,49 @@ Måske en video ala [denne](https://www.dtu.dk/english/education/msc/programmes/
 eller på [denne](https://kandidat.au.dk/retailmanagement/)
 
 
-```{r, include=TRUE, out.width="100%", fig.asp=NA, echo=FALSE}
+```{r, include=TRUE, out.width="100%", fig.asp=NA, fig.cap="Study programme overview. Hover over the nodes and arcs to see more information. Click the nodes to see the official course description. Golden and green courses are mandatory and electives, respectively. In the 4'th semester you write your master thesis within a OSCA topic using what you have learnt in the courses."}
 g <- create_diagram(
   url = "https://docs.google.com/spreadsheets/d/1TzNty62Ae5pNiwwB2CBgnAgeFyuODGK1gxc794GPoSg/edit?usp=sharing",
   nodes = "nodes",
   edges = "edges",
-  fontsize = 20)
+  edge_width = 5,
+  fontsize = 17,
+  col_mandatory = "Goldenrod3",
+  col_elective = "DarkSeaGreen4",
+  col_infobox = "PeachPuff3"
+  )
 # g %>% get_edge_df()
 # g %>% get_node_df()
-render_graph(g)
+render_graph(g, 
+             as_svg = T, 
+             # width = 1200
+             )
 ```
 
 
+CORAL is a research cluster that seeks to contribute to further research developments in the fields of Operations Research, Business Analytics, Logistics or similar fields such as Operations Management, Management Science, Supply Chain Management, Industrial Engineering, and Decision Science at Aarhus University. Research is conducted from theoretical as well as practical perspectives.
 
+Operations Research (OR) deals with the application of advanced analytical methods to help make better decisions. That is, OR may be seen as the application of scientific and mathematical methods to the study and analysis of problems involving complex systems. The terms management science and decision science are sometimes used as synonyms.
+
+Business Analytics (BA) refers to the scientific process of transforming data into insights for making better decisions in companies and organizations. BA can both be seen as the complete decision making process for solving a business problem and as the creation of business value by integration of concepts, methods and data. As a process, it can be characterized by descriptive, predictive, and prescriptive model building using (big) data sources. Operations Research and Management Science are closely related to prescriptive analytics. Companies that use BA focus on fact-based management to drive their decision-making, and they treat data and information as strategic assets to be shared within the company.
+
+Logistics and Operations Management is a cross-functional area focusing on effective and efficient flows of goods and services, and the related flows of information and cash. Supply Chain Management (SCM) adds a process-oriented and cross-company perspective. The process orientation implies emphasis on business processes like Demand Planning, Order Fulfillment, Customer Service Management and Procurement Management. The cross-company perspective focuses on the links and interfaces between the companies, e.g. vendors, manufacturers, distributors, third-party logistics providers, and the customers in a supply chain. Globalization of trade and supply chain relations adds to the challenges of, but also the potential for improved effectiveness and efficiencies of supply networks.
+
+For further details about the specific research interests of the CORAL members, see our publications and each member’s personal webpage.
+
+Several CORAL members teach in master's degree programmes such as Logistics and Supply Chain Management, Mathematics and Economics.
+
+
+## succes stories
+
+https://www.youtube.com/watch?v=KkVDcwzs6Ik&t=74s
+
+https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers
+
+https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Improving-water-quality-with-operations-research
+
+https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future 
+
+https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimized-school-bus-routing-helps-school-districts-design-better-policies
 
 

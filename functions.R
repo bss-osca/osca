@@ -7,31 +7,46 @@ library(RCurl)
 library(XML)
 library(tidyverse)
 
-add_graph_legend <- function(graph, x, y) {
+add_graph_legend <-
+  function(graph,
+           x,
+           y,
+           col_mandatory,
+           col_elective,
+           col_box
+  ) {
   graph %>%
     add_node(
-      label = c("", "Color:", "mandatory", "alternative", "extra", "Shape:", "non-interactive", "interactive"),
+      label = c("", "Color:", "mandatory", "alternative"),
       node_data =
-        node_aes(x = c(x+2.4, x-0.23, x, x+1, x+2, x+3.5-0.3, x+3.5, x+4.75),
-                 y = c(y-0.34, y, rep(y-0.4, 3), y, rep(y-0.4, 2)),
-                 fontcolor = c("white", "black", rep("white", 3), "black", "white", "white"),
+        node_aes(x = c(x, x, x, x+1),
+                 y = c(y, y, rep(y-0.4, 2)),
+                 fontcolor = c("white", "black", rep("white", 2)),
                  fontsize = 9,
-                 shape = c("rect", "none", rep("rect", 3), "none", "rect", "egg"),
-                 fillcolor = c(NA, "none", "DarkSeaGreen4", "DarkOrange4", "PeachPuff3", "none", rep("Grey40", 2)),
-                 width = c(6, rep(0.8, 4), rep(1,3)),
-                 height = c(1, 0, NA, NA, NA, 0, NA, NA),
-                 penwidth = c(0.5, 0, 2, 2, 2, 0, 2, 2),
+                 shape = c("rect", "none", rep("rect", 2)),
+                 fillcolor = c(col_box, "none", col_mandatory, col_elective),
+                 width = c(6, rep(0.8, 3)),
+                 height = c(1, 0, NA, NA),
+                 penwidth = c(0.5, 0, 2, 2),
                  tooltip = c("", "",
                              "Mandatory syllabus.",
-                             "Alternative syllabus if you prefer another learning style.",
-                             "Extra learning if you are interested (not part of syllabus).",
-                             "",
-                             "Non-interactive learning content (e.g. reading).",
-                             "Interactive learning content (tutorial, exercises etc.).")
+                             "Alternative syllabus if you prefer another learning style."
+                             )
         ))
 }
 
-create_diagram <- function(url, nodes, edges, x_legend = 0, y_legend = 0, fontsize = 12) {
+create_diagram <-
+  function(url,
+           nodes,
+           edges,
+           x_legend = 0,
+           y_legend = 0,
+           fontsize = 12,
+           col_mandatory,
+           col_elective,
+           col_infobox,
+           edge_width = 5
+  ) {
   # gs4_deauth()
   nodes <- read_sheet(url, sheet = nodes, col_types = "iciicccdd")
   edges <- read_sheet(url, sheet = edges, col_types = "iiic")
@@ -67,18 +82,34 @@ create_diagram <- function(url, nodes, edges, x_legend = 0, y_legend = 0, fontsi
         TRUE ~ ""),
       label = str_c(emo, "", label),
       fillcolor = case_when(
-        type == "Mandatory" ~ "DarkOrange4",
-        type == "Elective" ~ "DarkSeaGreen4",
-        type == "Infobox" ~ "PeachPuff3",
+        type == "Mandatory" ~ col_mandatory,
+        type == "Elective" ~ col_elective,
+        type == "Infobox" ~ col_infobox,
         TRUE ~ "#F4A261")
     ) %>%
     mutate_edge_attrs(
-      color = "black",
-      alpha = 0.15,
-      penwidth = 3,
-      arrowsize = 2,
-      arrowhead = "vee") %>%
-    add_graph_legend(x_legend, y_legend)
+      # color = "black",
+      headport = "w",
+      tailport = "e",
+      penwidth = edge_width,
+      arrowsize = edge_width*0.25,
+      arrowhead = "none"
+      ) %>% 
+    colorize_edge_attrs(
+      edge_attr_from = from,
+      edge_attr_to = color
+      # cut_points = c(0, 2, 4, 6, 8, 10),
+      # palette = "RdYlGn"
+      ) 
+    # rescale_edge_attrs(
+    #   "from", 0.5, 0.1, "alpha:fillcolor") %>% 
+    # add_graph_legend(
+    #   x_legend,
+    #   y_legend,
+    #   col_mandatory = col_mandatory,
+    #   col_elective = col_elective,
+    #   col_box = col_infobox
+    # )
   return(graph)
 }
 
@@ -150,12 +181,13 @@ create_wordcloud <- function(x, type=c("url", "text", "file"),
       # rotateRatio = 0.9,
       color = colors,
       # shape = "rectangle"
+      hoverFunction = htmlwidgets::JS("function(e){return}"),
       size = 1
     )
   # )
   # wordcloud(d$word,d$freq, min.freq=min.freq, max.words=max.words,
-  #           random.order=FALSE, rot.per=0.35, 
-  #           use.r.layout=FALSE, colors=colors)
+  #           random.order=FALSE, rot.per=0.35,
+  #           use.r.layout=FALSE, colors = "Dark2")
   
   invisible(
     list(tdm=tdm, 
@@ -179,3 +211,4 @@ html_to_text<-function(url){
   # Format text vector into one character string
   return(paste(text, collapse = " "))
 }
+
