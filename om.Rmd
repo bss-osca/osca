@@ -19,10 +19,14 @@ urls <- c("https://www.dtu.dk/english/education/msc/programmes/business-analytic
           "https://en.wikipedia.org/wiki/Inventory_control",
           "https://www.investopedia.com/terms/i/inventory-management.asp",
           "https://en.wikipedia.org/wiki/Operations_research",
-          "https://en.wikipedia.org/wiki/Operations_management")
+          "https://en.wikipedia.org/wiki/Operations_management",
+          "https://kandidat.au.dk/operationsandsupplychainanalytics/",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Improving-water-quality-with-operations-research",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future")
 lst <- create_wordcloud(
   urls, 
-  excludeWords = c("research", "archived", "stock", "wikipedia"), 
+  excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs","article","articles"), 
   max.words = 100)
 lst$wcloud
 # lst$freqTable
@@ -70,9 +74,10 @@ Here we will briefly introduce the five electives mentioned above
 
 
 #### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability){#scmSustain}
-* This course focuses on the incorporation of the concept of *sustainability* in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
-* Among others, the course will treat subjects such as **sustainability in an organization's strategy**, **the relation between sustainability and supply chain management decisions**, and **the cooperation on sustainability issues with suppliers**.
+* This course focuses on the incorporation of the concept of sustainability in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
+* Among others, the course will treat subjects such as **how to achieve (more) sustainability in a business context**, **making transportation greener**, **green purchasing**, **reverse logistics**, and **carbon footprints**.
 
+* **Her skal Marcels "PresentationElectivesSCMS2021" gerne være** kan man det?
 
 #### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics){#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
