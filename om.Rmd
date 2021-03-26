@@ -43,15 +43,15 @@ If you like Operations Management you may be interested in the following electiv
 
 Electives
 
-  * [Warehousing](#warehousing) (taught in Danish)
-  * [Decision Analysis](#decisionanalysis) (taught in English)
-  * [Supply Chain Management and Sustainability](#scmSustain) (taught in English)
+  * [Warehousing](#warehousing) (5 ECTS, taught in Danish)
+  * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in English)
+  * [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
-  * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (taught in Danish)
+  * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish)
 
-Moreover, in the 6'th semester you may write your bachelor thesis within topics such as production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
+Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytic, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
 
-Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study programme provides you with advance knowledge within areas such as supply chain design and management, data management using VBA and R, optimization and heuristics, simulation and business process modeling, transportation and distribution, inventory, production and demand management, and many more. Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
+Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study programme provides you with advanced knowledge within areas such as supply chain design and management, data management using VBA and R, optimization and heuristics, simulation and business process modeling, transportation and distribution, inventory, production and demand management, and many more. Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
 
 
 ### Applications of operations management
@@ -75,15 +75,16 @@ Here we will briefly introduce the five electives mentioned above
 * Among others, the course will treat subjects such as **the role of the warehouse in the supply chain**, **measuring the performance in warehouses**, **warehouse design and layout**, and **the role of returns**.
 
 #### [Decision Analysis (5 ECTS)](https://kursuskatalog.au.dk/da/course/108477/Decision-Analysis){#decisionanlysis}
-* Many business economics textbooks focus on well-described and well-structured problems that are easily solved using a model. However, it is often not described how to deal with uncertainty, several conflicting goals, and other complicating matters, which makes the decision-making process difficult. Thus, this course focuses on *exactly* those situations.
-* Among others, the course will treat subjects such as **multi-criteria decision making** (MCDM), **risk aversion**, and **decision processes in groups** .
+* Many business economics textbooks focus on well-described and well-structured problems that are easily solved using a model. However, it is often not described how to deal with problems that  involve uncertainty, several conflicting goals, multiple stakeholders and other complicating matters, which makes the decision-making process difficult. Thus, this course focuses on exactly those situations.
+*   Among others, the course will treat subjects such as **multi-criteria decision making** (MCDM), **decision making under uncertainty**, **incorporating risk attitude into decision making process**, and **decision processes in groups**.
+* Additional information about the course can found through the following [document](docs/Decision_Analysis_Introduction.pdf)
 
 
 #### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability){#scmSustain}
 * This course focuses on the incorporation of the concept of sustainability in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
 * Among others, the course will treat subjects such as **how to achieve (more) sustainability in a business context**, **making transportation greener**, **green purchasing**, **reverse logistics**, and **carbon footprints**.
 
-* **Her skal Marcels "PresentationElectivesSCMS2021" gerne være** kan man det?
+* Additional information about the course can found through the following [power point presentation](docs/PresentationElectivesSCMS2021.pptx)
 
 #### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics){#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
