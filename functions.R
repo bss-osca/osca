@@ -7,6 +7,8 @@ library(RCurl)
 library(XML)
 library(tidyverse)
 library(htmltools)
+library(tidyverse)
+library(lubridate)
 
 
 flex_box <- function() {
