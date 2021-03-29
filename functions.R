@@ -20,7 +20,7 @@ flex_box_item <- function(flex, text, background, link = NULL) {
   if (!is.null(link)) text <- tags$a(text, href = link)
   lst <- flex %>% 
     tagAppendChild(tags$li(
-      text, 
+      tags$div(text, class = "middle"), 
       class = "flexBoxItem", 
       style = str_c("background-image: url('", background, "');") ) )
   return(lst)

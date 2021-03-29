@@ -1,5 +1,5 @@
 
-ul.flexBox {
+.flexBox {
   margin: 0;
   padding: 0;
   display: flex;
@@ -9,7 +9,6 @@ ul.flexBox {
 
 li.flexBoxItem {
   height: 20vh;
-  line-height: 20vh;
   min-width: 20vh;
   flex-grow: 1;
   font-size: 150%;
@@ -32,15 +31,23 @@ li:last-child {
   flex-grow: 10;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
 
+/*
 @media (max-aspect-ratio: 1/1) {
   li.flexBoxItem {
-    height: 30vh;
+    height: 15vh;
   }
 }
 @media (max-height: 480px) {
   li.flexBoxItem {
-    height: 80vh;
+    height: 30vh;
   }
 }
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
@@ -49,7 +56,7 @@ li:last-child {
   }
 
   li.flexBoxItem {
-    height: auto;
+    height: 30vh;
     width: 100%;
   }
 
@@ -59,3 +66,4 @@ li:last-child {
     min-width: 0;
   }
 }
+*/
