@@ -40,3 +40,7 @@ render_graph(g,
 ```
 
 
+```{r, include = FALSE}
+# copy resource files to doc
+file.copy("assets", "docs", overwrite = T, recursive = T)
+```

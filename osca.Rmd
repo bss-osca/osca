@@ -42,7 +42,8 @@ gs4_deauth()
 
 Måske en video ala [denne](https://www.dtu.dk/english/education/msc/programmes/business-analytics) 
 eller på [denne](https://kandidat.au.dk/retailmanagement/)
-
+https://www.youtube.com/watch?v=bug2HkstxVM
+https://www.youtube.com/watch?v=ihd7XJMzdG4
 
 ```{r, include=TRUE, out.width="100%", fig.asp=NA, fig.cap="Study programme overview. Hover over the nodes and arcs to see more information. Click the nodes to see the official course description. Golden and green courses are mandatory and electives, respectively. In the 4'th semester you write your master thesis within a OSCA topic using what you have learnt in the courses."}
 g <- create_diagram(
@@ -79,7 +80,7 @@ Several CORAL members teach in master's degree programmes such as Logistics and 
 
 ## succes stories
 
-https://www.youtube.com/watch?v=KkVDcwzs6Ik&t=74s
+https://www.youtube.com/watch?v=KkVDcwzs6Ik&t=74s 
 
 https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers
 
@@ -90,3 +91,7 @@ https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshor
 https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimized-school-bus-routing-helps-school-districts-design-better-policies
 
 
+```{r, include = FALSE}
+# copy resource files to doc
+file.copy("assets", "docs", overwrite = T, recursive = T)
+```

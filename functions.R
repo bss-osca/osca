@@ -6,6 +6,32 @@ library(RColorBrewer)
 library(RCurl)
 library(XML)
 library(tidyverse)
+library(htmltools)
+
+
+flex_box <- function() {
+  lst <- tags$ul(class = "flexBox") #%>% 
+  # tagAppendChild(tags$li())
+  return(lst)
+}
+
+
+flex_box_item <- function(flex, text, background, link = NULL) {
+  if (!is.null(link)) text <- tags$a(text, href = link)
+  lst <- flex %>% 
+    tagAppendChild(tags$li(
+      text, 
+      class = "flexBoxItem", 
+      style = str_c("background-image: url('", background, "');") ) )
+  return(lst)
+}
+
+
+
+
+
+
+
 
 add_graph_legend <-
   function(graph,
