@@ -1,51 +1,37 @@
 ---
 title: "If you like Operations Management"
-# output: 
-#   html_document:
-#     css: ["assets/flexBox.css"]
+output: html_document
 editor_options: 
   chunk_output_type: console
-output:
-  rmdformats::robobook:
-    css: ["assets/flexBox.css"]
-    highlight: kate
-    toc_depth: 2
-# output:
-#   prettydoc::html_pretty:
-#     css: ["assets/flexBox.css"]
-#     theme: cayman  # hpstr, tactile, cayman 
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = TRUE, include = FALSE, warning = FALSE)
 ```
 
 ```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
 ```
 
+<br/>
 
 ```{r, out.width="100%", include=TRUE, echo=FALSE, out.height="300px", fig.height=1}
-urls <- c("https://econ.au.dk/research/other-research-entities/coral/profile/",
-          "https://bss-osca.github.io/osca/om.html",
-          "https://bss-osca.github.io/osca/diagramme.html",
-          # "https://kandidat.au.dk/operationsandsupplychainanalytics/",
-          # "https://www.dtu.dk/english/education/msc/programmes/business-analytics",
-          # "https://www.bakertilly.com/insights/data-analytics-journey-where-to-start",
-          # "https://pubsonline.informs.org/do/10.1287/LYTX.2010.06.01/full/",
-          # "https://en.wikipedia.org/wiki/Business_analytics",
-          # "https://en.wikipedia.org/wiki/Transportation_management_system",
-          # "https://en.wikipedia.org/wiki/Inventory_control",
-          # "https://www.investopedia.com/terms/i/inventory-management.asp",
-          # "https://en.wikipedia.org/wiki/Operations_research",
-          # "https://en.wikipedia.org/wiki/Operations_management",
-          # "https://kandidat.au.dk/operationsandsupplychainanalytics/",
-          # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers",
-          # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Improving-water-quality-with-operations-research",
-          # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
-          "https://bss-osca.github.io/osca/osca.html")
+urls <- c("https://www.dtu.dk/english/education/msc/programmes/business-analytics",
+          "https://econ.au.dk/research/other-research-entities/coral/profile/",
+          "https://www.bakertilly.com/insights/data-analytics-journey-where-to-start",
+          "https://pubsonline.informs.org/do/10.1287/LYTX.2010.06.01/full/",
+          "https://en.wikipedia.org/wiki/Business_analytics",
+          "https://en.wikipedia.org/wiki/Transportation_management_system",
+          "https://en.wikipedia.org/wiki/Inventory_control",
+          "https://www.investopedia.com/terms/i/inventory-management.asp",
+          "https://en.wikipedia.org/wiki/Operations_research",
+          "https://en.wikipedia.org/wiki/Operations_management",
+          "https://kandidat.au.dk/operationsandsupplychainanalytics/",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Improving-water-quality-with-operations-research",
+          "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future")
 lst <- create_wordcloud(
   urls, 
-  excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs","article","articles", "semester", "right", "among", "som", "hvis", "alle", "fag", "fra", "inden", "dansk", "din", "adds", "hvilke", "ects", "big", "seen", "many", "using", "course", "economics"), 
+  excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs","article","articles"), 
   max.words = 100)
 lst$wcloud
 # View(lst$freqTable %>% remove_rownames())
@@ -53,89 +39,68 @@ lst$wcloud
 
 <br/>
 
-
 If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
 Electives
 
-  * [Warehousing](#warehousing) (5 ECTS, taught in Danish)
+  * [Warehousing](#warehousing) (5 ECTS, taught in English)
   * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in English)
   * [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
   * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish)
 
-Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
+Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytic, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
 
 Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study programme provides you with advanced knowledge within areas such as supply chain design and management, data management using VBA and R, optimization and heuristics, simulation and business process modeling, transportation and distribution, inventory, production and demand management, and many more. Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
 
 
-## Applications of operations management
+### Applications of operations management
 
-```{r, include=TRUE}
-flex_box() %>% 
-  flex_box_item(text = "Airport operatons", 
-                link = "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Real-Time-Analytics-Improve-Airport-Operations",
-                background = "./assets/airport.jpg") %>% 
-  flex_box_item(text = "UPS On-Road Integrated Optimization and Navigation", 
-                link = "https://www.youtube.com/watch?v=vyqIuXB_Qug",
-                background = "./assets/ups.jpg") %>% 
-  flex_box_item(text = "Optimizing offshore wind farm design and enabling a fossil fuel free future", 
-                link = "informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
-                background = "./assets/wind.jpg") 
-  # tagAppendChild(tags$li())
-```
+Operations management has been successful in many aspects
 
-[Send better applications to Sune or Lars]
-[Need some within inventory and SC]
+* https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Real-Time-Analytics-Improve-Airport-Operations
 
-## Jobs in operations management
-
-[Any ideas here?]
+[A little list with jobs and success stories]
 
 
+[Some pictures of jobs]
 
 
-## List of bachelor electives related to Operations Management
+### List of bachelor electives related to Operations Management
 
 Here we will briefly introduce the five electives mentioned above
 
-### Warehousing (5 ECTS) {#warehousing}
+#### [Warehousing (5 ECTS)](https://kursuskatalog.au.dk/) {#warehousing}
 * The course will provide insights into different types of warehouse systems; from completely manual systems to fully automated ones. It will place the warehouse in the supply chain and will discuss concepts like terminal management and cross docking to ensure that students understand these concepts and can relate them to, and differentiate them from, warehouse management. 
 * Among others, the course will treat subjects such as **the role of the warehouse in the supply chain**, **measuring the performance in warehouses**, **warehouse design and layout**, and **the role of returns**.
+* A short presentation of the course can be seen below
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.youtube.com/embed/FKK-IEM9RCI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=warehouse&department=46")`)]
 
-### Decision Analysis (5 ECTS) {#decisionanalysis}
+
+#### [Decision Analysis (5 ECTS)](https://kursuskatalog.au.dk/da/course/108477/Decision-Analysis){#decisionanlysis}
 * Many business economics textbooks focus on well-described and well-structured problems that are easily solved using a model. However, it is often not described how to deal with problems that  involve uncertainty, several conflicting goals, multiple stakeholders and other complicating matters, which makes the decision-making process difficult. Thus, this course focuses on exactly those situations.
 *   Among others, the course will treat subjects such as **multi-criteria decision making** (MCDM), **decision making under uncertainty**, **incorporating risk attitude into decision making process**, and **decision processes in groups**.
+* Additional information about the course can found through the following [document](docs/Decision_Analysis_Introduction.pdf)
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=decision%20analysis&department=46")`) | [additional information](assets/decision_analysis.pdf)]
 
-### Supply chain managment and sustainability (5 ECTS) {#scmSustain}
+#### [Supply chain managment and sustainability (5 ECTS)](https://kursuskatalog.au.dk/da/course/106066/Supply-Chain-Management-and-Sustainability){#scmSustain}
 * This course focuses on the incorporation of the concept of sustainability in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
 * Among others, the course will treat subjects such as **how to achieve (more) sustainability in a business context**, **making transportation greener**, **green purchasing**, **reverse logistics**, and **carbon footprints**.
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=supply%20chain%20management%20and%20sustainability&department=46")`) | [additional information](assets/scms.pdf)]
+* Additional information about the course can found through the following [power point presentation](docs/PresentationElectivesSCMS2021.pptx)
 
-### Modellering inden for Prescriptive Analytics (10 ECTS) {#mipa}
+#### [Modellering inden for Prescriptive Analytics (10 ECTS)](https://kursuskatalog.au.dk/da/course/106051/Modellering-inden-for-prescriptive-analytics){#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
 * Among others, the course will treat subjects such as **location planning**, **production planning**, and **vehicle routing** but also **validation** and **verification** of models and solutions. 
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=modellering%20inden%20for%20prescriptive%20analytics&department=46")`) | [introduction video](https://www.loom.com/embed/2f1a9f5a9f614b5481e57313621c8252)]
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/2f1a9f5a9f614b5481e57313621c8252" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-### Dynamisk performance og data-dreven modellering (10 ECTS) {#dynPerform}
+
+#### [Dynamisk performance og data-dreven modellering (10 ECTS)](https://kursuskatalog.au.dk/da/course/102350/Dynamisk-performance-og-data-dreven-modellering) {#dynPerform}
 * In this course we study performance measurement and management by investing topics within *business analytics* and the area of *data*. Knowledge about how organizations work with models and data and about the decisions made based on these is fundamental for the survival of the organization. Thus, we provide the student with said knowledge and the prerequisites for working with performance measurement and management in the future.
 * Among others, the course will treat subjects such as **quantitative performance models**, **dynamic performance and data-driven modelling**, **Monte Carlo simulation**, and **time-drive activity-based costing** in the **balanced score card** model.
 
-ER DENNE AFLYST??
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=dynamisk%20performance&department=46")`)]
-
-
-
-```{r, include = FALSE}
-# copy resource files to doc
-file.copy("assets", "docs", overwrite = T, recursive = T)
-```
 
 

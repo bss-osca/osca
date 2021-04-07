@@ -20,7 +20,7 @@ gs4_deauth()
 ```
 
 
-```{r, include=TRUE, out.width="100%", fig.asp=NA, fig.cap="Study programme overview. Hover over the nodes and arcs to see more information. Click the nodes to see the official course description. Golden and green courses are mandatory and electives, respectively. In the 4'th semester you write your master thesis within a OSCA topic using what you have learnt in the courses."}
+```{r, include=TRUE, out.width="100%", fig.asp=NA, fig.cap="Study programme overview. Hover over the nodes and arcs to see more information. Click the nodes to see the official course description. Golden and green courses are mandatory and electives, respectively. In the 4'th semester you write your master's thesis within an OSCA topic using what you have learnt in the courses - thus, implicitly, all courses point to the master's thesis."}
 g <- create_diagram(
   url = "https://docs.google.com/spreadsheets/d/1TzNty62Ae5pNiwwB2CBgnAgeFyuODGK1gxc794GPoSg/edit?usp=sharing",
   nodes = "nodes",
