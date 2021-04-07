@@ -7,8 +7,8 @@
   list-style-type: none; 
 }
 
-li.flexBoxItem {
-  height: 20vh;
+.flexBoxItem {
+  height: 15vh;
   min-width: 20vh;
   flex-grow: 1;
   font-size: 150%;
@@ -21,10 +21,11 @@ li.flexBoxItem {
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;
+  color: white;
 }
 
-li.flexBoxItem a {
-  color: white;
+.middle a {
+  color: white !important;
 }
 
 li:last-child {
