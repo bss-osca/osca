@@ -85,9 +85,6 @@ flex_box() %>%
   # tagAppendChild(tags$li())
 ```
 
-[Send better applications to Sune or Lars]
-[Need some within inventory and SC]
-
 ## Jobs in operations management
 
 Our candidates from the Operations and Supply Chain Analytics program (former Logistics and Supply Chain Management) hold positions such as
