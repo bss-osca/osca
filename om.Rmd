@@ -90,7 +90,22 @@ flex_box() %>%
 
 ## Jobs in operations management
 
-[Any ideas here?]
+Our candidates from the Operations and Supply Chain Analytics program (former Logistics and Supply Chain Management) hold positions such as
+
+* Never-out-of-stock (NOOS) planner
+* Lead analyst in Digitalization and Processes
+* ERP Consultant
+* Production planner
+
+The candidates works in, amongst many others, companies such as
+
+[[Vestas](https://www.vestas.com/) | [BESTSELLER](https://about.bestseller.com/contact/general-contact) |
+[Arla](https://www.arla.dk/om-arla/landmandsejet/) |
+[iAdvice](https://www.iadvice.dk/?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMwhuI-B3umC8dVFm11A8Z5zAzZlsogkP_4Mlf7B3nSI4ETeY8ykpgaAlpDEALw_wcB) | 
+[Salling Group](https://sallinggroup.com/om-os/) |
+[Unifeeder](https://www.unifeeder.com/)]
+
+
 
 
 
