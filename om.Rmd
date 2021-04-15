@@ -80,7 +80,7 @@ flex_box() %>%
                 link = "https://www.youtube.com/watch?v=vyqIuXB_Qug",
                 background = "./assets/ups.jpg") %>% 
   flex_box_item(text = "Optimizing offshore wind farm design", 
-                link = "informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
+                link = "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
                 background = "./assets/wind.jpg") 
   # tagAppendChild(tags$li())
 ```
@@ -126,8 +126,6 @@ Here we will briefly introduce the five electives mentioned above
 ### Dynamisk performance og data-dreven modellering (10 ECTS) {#dynPerform}
 * In this course we study performance measurement and management by investing topics within *business analytics* and the area of *data*. Knowledge about how organizations work with models and data and about the decisions made based on these is fundamental for the survival of the organization. Thus, we provide the student with said knowledge and the prerequisites for working with performance measurement and management in the future.
 * Among others, the course will treat subjects such as **quantitative performance models**, **dynamic performance and data-driven modelling**, **Monte Carlo simulation**, and **time-drive activity-based costing** in the **balanced score card** model.
-
-ER DENNE AFLYST??
 
 [[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=dynamisk%20performance&department=46")`)]
 
