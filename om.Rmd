@@ -64,10 +64,11 @@ Electives
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
   * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish)
 
-Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/) (extend the 'vejleder' box).
+Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/). 
 
-Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study programme provides you with advanced knowledge within areas such as supply chain design and management, data management using VBA and R, optimization and heuristics, simulation and business process modeling, transportation and distribution, inventory, production and demand management, and many more. Note that you don't have to follow any of the aforementioned electives for joining the [OSCA](osca.html) programme.
 
+
+Finally, the [Operations and Supply Chain Analytics (OSCA)](osca.html) master study program provides you with advanced knowledge within broad areas of operations and supply chain management. The program will equip students with skills in designing and managing intra-firm operations activities such as production, inventory, distribution and transportation, as well as inter-firm activities in a coordinated supply chain. Those skills are enhanced further through the mastering of digital tools for analytics covering data management using VBA and R, optimization and heuristics, and simulation and business process modeling, which are used for transforming data into insights for making better decisions. Note that you do not have to follow any of the aforementioned electives for joining the [OSCA](osca.html) program.
 
 ## Applications of operations management
 
@@ -81,7 +82,10 @@ flex_box() %>%
                 background = "./assets/ups.jpg") %>% 
   flex_box_item(text = "Optimizing offshore wind farm design", 
                 link = "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
-                background = "./assets/wind.jpg") 
+                background = "./assets/wind.jpg") %>%
+  flex_box_item(text = "The global computer chip shortage", 
+                link = "https://youtu.be/sfAyXjRFUJk",
+                background = "./assets/chips.jpeg")
   # tagAppendChild(tags$li())
 ```
 
@@ -127,7 +131,7 @@ Here we will briefly introduce the five electives mentioned above
 * This course focuses on the incorporation of the concept of sustainability in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
 * Among others, the course will treat subjects such as **how to achieve (more) sustainability in a business context**, **making transportation greener**, **green purchasing**, **reverse logistics**, and **carbon footprints**.
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=supply%20chain%20management%20and%20sustainability&department=46")`) | [additional information](assets/scms.pdf)]
+[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=supply%20chain%20management%20and%20sustainability&department=46")`) | [additional information](assets/PresentationElectivesSCMS2021.pptx)]
 
 ### Modellering inden for Prescriptive Analytics (10 ECTS) {#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
