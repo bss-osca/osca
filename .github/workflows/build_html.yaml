@@ -55,5 +55,5 @@ jobs:
           git config pull.rebase false
           git add docs/\*.html
           git commit --allow-empty -am 'gHA build html: ${{github.run_number}}' || echo "No changes to commit"
-          git pull origin master
+          git pull origin main
           git push origin || echo "No changes to commit"
