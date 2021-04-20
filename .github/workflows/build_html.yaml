@@ -52,6 +52,8 @@ jobs:
         run: |
           git config --local user.email "junk@relund.dk"
           git config --local user.name "relund"
+          git config pull.rebase false
           git add docs/\*.html
           git commit --allow-empty -am 'gHA build html: ${{github.run_number}}' || echo "No changes to commit"
+          git pull origin master
           git push origin || echo "No changes to commit"
