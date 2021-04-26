@@ -45,7 +45,12 @@ urls <- c("https://econ.au.dk/research/other-research-entities/coral/profile/",
           "https://bss-osca.github.io/osca/osca.html")
 lst <- create_wordcloud(
   urls, 
-  excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs","article","articles", "semester", "right", "among", "som", "hvis", "alle", "fag", "fra", "inden", "dansk", "din", "adds", "hvilke", "ects", "big", "seen", "many", "using", "course", "economics"), 
+  excludeWords = c("research", "archived", "stock", "wikipedia","also", "retrieved","can","informs",
+                   "article","articles", "semester", "right", "among", "som", "hvis", "alle", "fag", 
+                   "fra", "inden", "dansk", "din", "adds", "hvilke", "ects", "big", "seen", "many", 
+                   "using", "course", "economics", "other", "focusses", "refers", "video", "will",
+                   "area", "like", "write", "english", "see", "green", "thus", "taught", "used",
+                   "well", "list", "may", "focus", "treat", "use", "focuses"), 
   max.words = 100)
 lst$wcloud
 # View(lst$freqTable %>% remove_rownames())
