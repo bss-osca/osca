@@ -67,7 +67,7 @@ Electives
   * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in English)
   * [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
-  * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish)
+  <!-- * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish) -->
 
 Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/). 
 
@@ -144,11 +144,11 @@ Here we will briefly introduce the five electives mentioned above
 
 [[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=modellering%20inden%20for%20prescriptive%20analytics&department=46")`) | [introduction video](https://www.loom.com/embed/2f1a9f5a9f614b5481e57313621c8252)]
 
-### Dynamisk performance og data-dreven modellering (10 ECTS) {#dynPerform}
-* In this course we study performance measurement and management by investing topics within *business analytics* and the area of *data*. Knowledge about how organizations work with models and data and about the decisions made based on these is fundamental for the survival of the organization. Thus, we provide the student with said knowledge and the prerequisites for working with performance measurement and management in the future.
-* Among others, the course will treat subjects such as **quantitative performance models**, **dynamic performance and data-driven modelling**, **Monte Carlo simulation**, and **time-drive activity-based costing** in the **balanced score card** model.
+<!-- ### Dynamisk performance og data-dreven modellering (10 ECTS) {#dynPerform} -->
+<!-- * In this course we study performance measurement and management by investing topics within *business analytics* and the area of *data*. Knowledge about how organizations work with models and data and about the decisions made based on these is fundamental for the survival of the organization. Thus, we provide the student with said knowledge and the prerequisites for working with performance measurement and management in the future. -->
+<!-- * Among others, the course will treat subjects such as **quantitative performance models**, **dynamic performance and data-driven modelling**, **Monte Carlo simulation**, and **time-drive activity-based costing** in the **balanced score card** model. -->
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=dynamisk%20performance&department=46")`)]
+<!-- [[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=dynamisk%20performance&department=46")`)] -->
 
 
 
