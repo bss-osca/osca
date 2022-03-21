@@ -21,7 +21,7 @@ gs4_deauth()
 
 ## The *Operations and Supply Chain Analytics* program {#OSCA}
 
-*Operations and Supply Chain Management* (OSCM) includes a broad area covering both manufacturing and service industries, and it involves functions such as sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting, order fulfillment, and more.
+*Operations and Supply Chain Management* (OSCM) includes a broad area covering both manufacturing and service industries, and it involves functions such as sourcing, materials management, operations planning, distribution, logistics, retail, demand forecasting, order fulfilment, and more.
 
 
 *Analytics* refers to the scientific process of transforming data into insights for making better decisions in businesses (Definition of [INFORMS.org](https://www.informs.org/About-INFORMS/News-Room/O.R.-and-Analytics-in-the-News/Best-definition-of-analytics)). 

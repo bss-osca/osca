@@ -64,7 +64,7 @@ If you like Operations Management you may be interested in the following electiv
 Electives
 
   * [Warehousing](#warehousing) (5 ECTS, taught in English)
-  * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in English)
+  * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in Danish)
   * [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
   * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
   <!-- * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish) -->
