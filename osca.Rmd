@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE, include = FALSE, message = FALSE)
 ```{r}
 library(tidyverse)
 library(DiagrammeR)
+library(DiagrammeRsvg)
 library(googlesheets4)
 gs4_deauth()
 ```
