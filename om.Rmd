@@ -17,7 +17,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, cache = TRUE)
 ```
 
 ```{r, code = readLines("functions.R"), cache = FALSE, include=FALSE}
@@ -25,20 +25,17 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
 
 
 ```{r, out.width="100%", include=TRUE, echo=FALSE, out.height="300px", fig.height=1}
-urls <- c("https://econ.au.dk/research/other-research-entities/coral/profile/",
-          "https://bss-osca.github.io/osca/om.html",
+urls <- c("https://bss-osca.github.io/osca/om.html",
           "https://bss-osca.github.io/osca/diagramme.html",
-          # "https://kandidat.au.dk/operationsandsupplychainanalytics/",
-          # "https://www.dtu.dk/english/education/msc/programmes/business-analytics",
+          "https://masters.au.dk/operationsandsupplychainanalytics",
           # "https://www.bakertilly.com/insights/data-analytics-journey-where-to-start",
           # "https://pubsonline.informs.org/do/10.1287/LYTX.2010.06.01/full/",
           # "https://en.wikipedia.org/wiki/Business_analytics",
           # "https://en.wikipedia.org/wiki/Transportation_management_system",
           # "https://en.wikipedia.org/wiki/Inventory_control",
           # "https://www.investopedia.com/terms/i/inventory-management.asp",
-          # "https://en.wikipedia.org/wiki/Operations_research",
-          # "https://en.wikipedia.org/wiki/Operations_management",
-          # "https://kandidat.au.dk/operationsandsupplychainanalytics/",
+          "https://en.wikipedia.org/wiki/Operations_research",
+          "https://en.wikipedia.org/wiki/Operations_management",
           # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Increasing-ride-share-efficiency-Better-outcomes-for-drivers-and-passengers",
           # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Improving-water-quality-with-operations-research",
           # "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-offshore-wind-farm-design-and-enabling-a-fossil-fuel-free-future",
@@ -50,7 +47,9 @@ lst <- create_wordcloud(
                    "fra", "inden", "dansk", "din", "adds", "hvilke", "ects", "big", "seen", "many", 
                    "using", "course", "economics", "other", "focusses", "refers", "video", "will",
                    "area", "like", "write", "english", "see", "green", "thus", "taught", "used",
-                   "well", "list", "may", "focus", "treat", "use", "focuses"), 
+                   "well", "list", "may", "focus", "treat", "use", "focuses", "engineering",
+                   "since", "der", "one", "within", "first", "number", "â€“", "war", "systems",
+                   "new"), 
   max.words = 100)
 lst$wcloud
 # View(lst$freqTable %>% remove_rownames())
@@ -61,19 +60,16 @@ lst$wcloud
 
 If you like Operations Management you may be interested in the following electives in the 5'th semester:
 
-Electives
-
   <!-- * [Warehousing](#warehousing) (5 ECTS, taught in English) -->
   <!-- * [Decision Analysis](#decisionanalysis) (5 ECTS, taught in Danish) -->
-  * [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
-  * [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
+  
+  - [Supply Chain Management and Sustainability](#scmSustain) (5 ECTS, taught in English)
+  - [Modellering indenfor præskriptiv analyse](#mipa) (10 ECTS, taught in Danish)
   <!-- * [Dynamisk Performance og Data-dreven Modellering](#dynPerform) (10 ECTS, taught in Danish) -->
 
-Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look at the Operations and SCM section in the [supervisor list pdf](https://studerende.au.dk/studier/fagportaler/businessadm/bachelorprojekt-og-speciale/bachelorprojekt/). 
+Moreover, in the 6'th semester you may write your bachelor thesis within topics such as operations management, supply chain management, business analytics, production planning, distribution and transportation, forecasting, scheduling, logistics, lean, balanced scorecard and many more. Have a look in [here](https://studerende.au.dk/en/studies/subject-portals/business-administration/bachelors-project-and-masters-thesis/bachelorsproject), open the supervisor list and look at the Operations and SCM section. 
 
-
-
-Finally, the [Operations and Supply Chain Analytics (OSCA)](https://kandidat.au.dk/operationsandsupplychainanalytics/) master study program provides you with advanced knowledge within broad areas of operations and supply chain management. The program will equip students with skills in designing and managing intra-firm operations activities such as production, inventory, distribution and transportation, as well as inter-firm activities in a coordinated supply chain. Those skills are enhanced further through the mastering of digital tools for analytics covering data management using VBA and R, optimization and heuristics, and simulation and business process modeling, which are used for transforming data into insights for making better decisions. Note that you do not have to follow any of the aforementioned electives for joining the [OSCA](osca.html) program.
+Finally, the [Operations and Supply Chain Analytics (OSCA)](https://masters.au.dk/operationsandsupplychainanalytics) master study program provides you with advanced knowledge within broad areas of operations and supply chain management. The program will equip students with skills in designing and managing intrafirm operations activities such as production, inventory, distribution and transportation, as well as inter-firm activities in a coordinated supply chain. Those skills are enhanced further through the mastering of digital tools for analytics covering data management using VBA and R, optimization and heuristics, and simulation and business process modeling, which are used for transforming data into insights for making better decisions. Note that you do not have to follow any of the aforementioned electives for joining the OSCA program.
 
 ## Applications of operations management
 
@@ -105,11 +101,13 @@ Our candidates from the Operations and Supply Chain Analytics program (former Lo
 
 The candidates works in, amongst many others, companies such as
 
-[[Vestas](https://www.vestas.com/) | [BESTSELLER](https://about.bestseller.com/contact/general-contact) |
+[[Vestas](https://www.vestas.com/) | 
+[BESTSELLER](https://about.bestseller.com/contact/general-contact) |
 [Arla](https://www.arla.dk/om-arla/landmandsejet/) |
-[iAdvice](https://www.iadvice.dk/?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgMwhuI-B3umC8dVFm11A8Z5zAzZlsogkP_4Mlf7B3nSI4ETeY8ykpgaAlpDEALw_wcB) | 
+[Lego](https://www.lego.com/) | 
 [Salling Group](https://sallinggroup.com/om-os/) |
-[Unifeeder](https://www.unifeeder.com/)]
+[Unifeeder](https://www.unifeeder.com/) |
+[Rema1000](https://www.rema1000.dk/)]
 
 
 
@@ -136,13 +134,14 @@ Here we will briefly introduce the electives mentioned above
 * This course focuses on the incorporation of the concept of sustainability in the supply chain. We determine how sustainability issues and the reaction to them within organizations change the way decisions are made within Supply Chain Management
 * Among others, the course will treat subjects such as **how to achieve (more) sustainability in a business context**, **making transportation greener**, **green purchasing**, **reverse logistics**, and **carbon footprints**.
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now())-1, "-", year(now())+1, "&search=supply%20chain%20management%20and%20sustainability&department=46")`) | [additional information](assets/PresentationElectivesSCMS2021.pptx)]
+[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=supply%20chain%20management%20and%20sustainability&department=46")`)]
+<!-- | [additional information](assets/PresentationElectivesSCMS2021.pptx)] -->
 
 ### Modellering inden for Prescriptive Analytics (10 ECTS) {#mipa}
 * This course focuses on presciptive analytics and on the use of quantitive models and optimization. The main foucs is on modelling decision problems arising in business economics, on the interpretation of solutions, and on the validity of underlying assumptions. This course builds on the subjects of linear and integer programming taught in Operations Management.
 * Among others, the course will treat subjects such as **location planning**, **production planning**, and **vehicle routing** but also **validation** and **verification** of models and solutions. 
 
-[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now())-1, "-", year(now())+1, "&search=modellering%20inden%20for%20prescriptive%20analytics&department=46")`) | [introduction video](https://www.loom.com/embed/2f1a9f5a9f614b5481e57313621c8252)]
+[[official course description](`r str_c("https://kursuskatalog.au.dk/da?year=", year(now()), "-", year(now())+1, "&search=modellering%20inden%20for%20prescriptive%20analytics&department=46")`) | [introduction video](https://www.loom.com/embed/2f1a9f5a9f614b5481e57313621c8252)]
 
 <!-- ### Dynamisk performance og data-dreven modellering (10 ECTS) {#dynPerform} -->
 <!-- * In this course we study performance measurement and management by investing topics within *business analytics* and the area of *data*. Knowledge about how organizations work with models and data and about the decisions made based on these is fundamental for the survival of the organization. Thus, we provide the student with said knowledge and the prerequisites for working with performance measurement and management in the future. -->
